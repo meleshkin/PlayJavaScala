@@ -1,0 +1,7 @@
+GET /hello  controllers.Application.index
+
+POST /sayHello  controllers.JavaController.sayHello
+
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+    

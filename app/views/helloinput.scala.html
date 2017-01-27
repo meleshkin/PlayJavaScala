@@ -1,0 +1,12 @@
+@(form: play.api.data.Form[HelloForm])
+@main("Hello input") {
+    @helper.form(routes.JavaController.sayHello) {
+        <h1>Enter your name</h1>
+        <p>
+            <input type="text" name="name" placeholder="Name" value="@form("name").value" />
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    }
+}
