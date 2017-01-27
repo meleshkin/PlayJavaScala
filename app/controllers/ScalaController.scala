@@ -7,7 +7,7 @@ import play.api.mvc._
 
 case class HelloForm(name: String)
 
-class Application extends Controller {
+class ScalaController extends Controller {
 
   private val helloForm: Form[HelloForm] = Form (
     mapping("name" -> text) (HelloForm.apply)(HelloForm.unapply)

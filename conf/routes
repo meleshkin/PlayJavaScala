@@ -1,4 +1,4 @@
-GET /hello  controllers.Application.index
+GET /hello  controllers.ScalaController.index
 
 POST /sayHello  controllers.JavaController.sayHello
 
